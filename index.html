@@ -4,7 +4,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Cazador de Titanes</title>
@@ -15,7 +14,9 @@
 
 <body>
 
-<!-- MENÚ -->
+<!-- ===================== -->
+<!-- MENÚ PRINCIPAL -->
+<!-- ===================== -->
 
 <div id="menu">
 
@@ -23,11 +24,15 @@
 
 <p>La humanidad necesita un nuevo héroe.</p>
 
-<button id="playBtn">JUGAR</button>
+<button id="playBtn">
+JUGAR
+</button>
 
 </div>
 
+<!-- ===================== -->
 <!-- CREAR PERSONAJE -->
+<!-- ===================== -->
 
 <div id="creator" style="display:none;">
 
@@ -36,60 +41,91 @@
 <input
 id="playerName"
 type="text"
-placeholder="Nombre del cazador">
-
-<br><br>
+placeholder="Escribe tu nombre">
 
 <button id="startGame">
-
-COMENZAR AVENTURA
-
+COMENZAR
 </button>
 
 </div>
 
+<!-- ===================== -->
 <!-- JUEGO -->
+<!-- ===================== -->
 
 <div id="game" style="display:none;">
 
-<h2 id="name"></h2>
+<!-- JUGADOR -->
 
-<p>❤️ Vida:
-<span id="life">100</span>
-</p>
+<div id="playerBox">
 
-<p>⚔ Ataque:
-<span id="attack">20</span>
-</p>
-
-<p>🛡 Defensa:
-<span id="defense">10</span>
-</p>
-
-<hr>
-
-<div id="enemy">
-
-<h2 id="enemyName">
-No hay enemigos
+<h2 id="name">
+Jugador
 </h2>
 
 <p>
 ❤️ Vida:
-<span id="enemyLife">
--
-</span>
+<span id="life">100</span>/100
 </p>
+
+<p>
+⚔ Ataque:
+<span id="attack">20</span>
+</p>
+
+<p>
+🛡 Defensa:
+<span id="defense">10</span>
+</p>
+
+</div>
+
+<hr>
+
+<!-- ENEMIGO -->
+
+<div id="enemy">
+
+<h2 id="enemyName">
+Sin enemigo
+</h2>
+
+<p>
+❤️ Vida:
+<span id="enemyLife">0</span>/100
+</p>
+
+</div>
+
+<hr>
+
+<!-- MENSAJES -->
+
+<div id="battleLog">
+
+Pulsa "Buscar Titán" para comenzar.
 
 </div>
 
 <br>
 
+<!-- BOTONES -->
+
+<div id="actions">
+
 <button id="huntBtn">
-
 BUSCAR TITÁN
-
 </button>
+
+<button id="attackBtn" disabled>
+ATACAR
+</button>
+
+<button id="healBtn" disabled>
+RECUPERAR
+</button>
+
+</div>
 
 </div>
 
