@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Cazador de Titanes</title>
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
+<!-- MENÚ -->
+
 <div id="menu">
 
 <h1>CAZADOR DE TITANES</h1>
@@ -20,32 +27,74 @@
 
 </div>
 
+<!-- CREAR PERSONAJE -->
+
 <div id="creator" style="display:none;">
 
 <h2>CREA TU CAZADOR</h2>
 
-<input id="playerName" type="text" placeholder="Nombre del cazador">
+<input
+id="playerName"
+type="text"
+placeholder="Nombre del cazador">
 
 <br><br>
 
-<button id="startGame">COMENZAR AVENTURA</button>
+<button id="startGame">
+
+COMENZAR AVENTURA
+
+</button>
 
 </div>
+
+<!-- JUEGO -->
 
 <div id="game" style="display:none;">
 
 <h2 id="name"></h2>
 
-<p>❤️ Vida: <span id="life">100</span></p>
+<p>❤️ Vida:
+<span id="life">100</span>
+</p>
 
-<p>⚔ Ataque: <span id="attack">20</span></p>
+<p>⚔ Ataque:
+<span id="attack">20</span>
+</p>
 
-<p>🛡 Defensa: <span id="defense">10</span></p>
+<p>🛡 Defensa:
+<span id="defense">10</span>
+</p>
 
-<button id="huntBtn">BUSCAR TITÁN</button>
+<hr>
+
+<div id="enemy">
+
+<h2 id="enemyName">
+No hay enemigos
+</h2>
+
+<p>
+❤️ Vida:
+<span id="enemyLife">
+-
+</span>
+</p>
+
+</div>
+
+<br>
+
+<button id="huntBtn">
+
+BUSCAR TITÁN
+
+</button>
 
 </div>
 
 <script src="game.js"></script>
+
 </body>
+
 </html>
