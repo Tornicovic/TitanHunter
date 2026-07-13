@@ -1,15 +1,30 @@
-const playBtn=document.getElementById("playBtn");
+const menu = document.getElementById("menu");
+const creator = document.getElementById("creator");
+const game = document.getElementById("game");
 
-const optionsBtn=document.getElementById("optionsBtn");
+const playBtn = document.getElementById("playBtn");
+const startGame = document.getElementById("startGame");
+const huntBtn = document.getElementById("huntBtn");
 
-playBtn.onclick=function(){
+playBtn.onclick = function () {
+    menu.style.display = "none";
+    creator.style.display = "block";
+};
 
-alert("Bienvenido.\nEn la siguiente versión añadiremos el tutorial.");
+startGame.onclick = function () {
+    const nombre = document.getElementById("playerName").value;
 
-}
+    if (nombre === "") {
+        alert("Escribe un nombre para tu cazador.");
+        return;
+    }
 
-optionsBtn.onclick=function(){
+    creator.style.display = "none";
+    game.style.display = "block";
 
-alert("Opciones disponibles próximamente.");
+    document.getElementById("name").innerText = nombre;
+};
 
-}
+huntBtn.onclick = function () {
+    alert("¡Has encontrado un Titán! ⚔️\n\nEl combate llegará en la siguiente versión.");
+};

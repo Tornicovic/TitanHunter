@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
 <div id="menu">
 
 <h1>CAZADOR DE TITANES</h1>
@@ -19,11 +18,34 @@
 
 <button id="playBtn">JUGAR</button>
 
-<button id="optionsBtn">OPCIONES</button>
+</div>
+
+<div id="creator" style="display:none;">
+
+<h2>CREA TU CAZADOR</h2>
+
+<input id="playerName" type="text" placeholder="Nombre del cazador">
+
+<br><br>
+
+<button id="startGame">COMENZAR AVENTURA</button>
+
+</div>
+
+<div id="game" style="display:none;">
+
+<h2 id="name"></h2>
+
+<p>❤️ Vida: <span id="life">100</span></p>
+
+<p>⚔ Ataque: <span id="attack">20</span></p>
+
+<p>🛡 Defensa: <span id="defense">10</span></p>
+
+<button id="huntBtn">BUSCAR TITÁN</button>
 
 </div>
 
 <script src="game.js"></script>
-
 </body>
 </html>
